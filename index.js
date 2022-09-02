@@ -1,6 +1,6 @@
 function isPalindrome(word) {
   // Write your algorithm here
-}
+
 
 /* 
   Add your pseudocode here
@@ -9,6 +9,20 @@ function isPalindrome(word) {
 /*
   Add written explanation of your solution here
 */
+
+const arrayOfLetters = word.split('');
+  const reverseLetters = arrayOfLetters.reverse()
+  const reverseString  = reverseLetters.join('')
+
+  if (word == reverseString){
+
+    return true
+
+  } else {
+    return false
+  }
+
+}
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
